@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -88,49 +87,7 @@
       </div>
     </div>
     
-    <!-- IMPORTANTE: Usar la ruta canónica para el entry point que Vite reescribirá durante la build -->
-    <script type="module" src="/src/index.tsx"></script>
-
-    <!-- Script de Diagnóstico: Detecta si el JS falló y muestra ayuda -->
-    <script>
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          var root = document.getElementById('root');
-          // Si sigue mostrando el spinner después de 3 segundos, algo falló
-          if (root && root.innerText.includes('Cargando CV')) {
-             console.warn("La aplicación React no se ha montado. Posible error de configuración.");
-             
-             var isGitHub = window.location.hostname.includes('github.io');
-             var message = '<div style="padding: 2rem; text-align: center; font-family: sans-serif; color: #334155; max-width: 600px; margin: 0 auto;">';
-             
-             message += '<div style="font-size: 3rem; margin-bottom: 1rem;">⚠️</div>';
-             message += '<h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #1e293b;">No se pudo cargar la aplicación</h2>';
-             
-             if (isGitHub) {
-               message += '<p style="margin-bottom: 1rem;">GitHub Pages está intentando leer el archivo <code>index.tsx</code> original en lugar de la versión compilada.</p>';
-               message += '<div style="background: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin: 1.5rem 0; text-align: left; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">';
-               message += '<p style="font-weight: bold; margin-bottom: 0.75rem; color: #2563eb;">Solución requerida:</p>';
-               message += '<ol style="list-style-type: decimal; list-style-position: inside; padding-left: 0; line-height: 1.8; color: #475569;">';
-               message += '<li>Ve a la pestaña <strong>Settings</strong> de tu repositorio en GitHub.</li>';
-               message += '<li>En el menú lateral, haz clic en <strong>Pages</strong>.</li>';
-               message += '<li>En la sección "Build and deployment", busca <strong>Branch</strong>.</li>';
-               message += '<li>Cambia la carpeta de <code>/ (root)</code> a <strong><code>/dist</code></strong>.</li>';
-               message += '<li>Haz clic en <strong>Save</strong>.</li>';
-               message += '</ol>';
-               message += '</div>';
-               message += '<p style="font-size: 0.875rem; color: #64748b;">Espera 1-2 minutos después de guardar y recarga esta página.</p>';
-             } else {
-               message += '<div style="background: #fff1f2; color: #be123c; padding: 1rem; border-radius: 0.5rem; border: 1px solid #fda4af;">';
-               message += '<p><strong>Error local:</strong> No abras el archivo <code>index.html</code> directamente.</p>';
-               message += '<p style="margin-top:0.5rem">Usa el comando <code>npm run dev</code> para desarrollar o <code>npm run preview</code> para ver la build.</p>';
-               message += '</div>';
-             }
-             
-             message += '</div>';
-             root.innerHTML = message;
-          }
-        }, 3000); // Espera 3 segundos antes de mostrar el error
-      });
-    </script>
+    <!-- IMPORTANTE: Apuntar correctamente al archivo index.tsx en la raíz -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
