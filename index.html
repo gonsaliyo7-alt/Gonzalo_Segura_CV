@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio y Curriculum Vitae Interactivo de Gonzalo Segura Taguas. Estratega de Innovación Global, Ingeniero Full Stack y Experto en Finanzas Cuantitativas." />
+    <meta property="og:title" content="Gonzalo Segura Taguas - CV Interactivo" />
+    <meta property="og:description" content="Estratega de Innovación Global | Ingeniero Full Stack & Finanzas Cuantitativas. Explora mi experiencia y proyectos." />
+    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQEVItu03CE4TQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1706956655016?e=2147483647&v=beta&t=q8NWXqZCm5n7m2V4VOoFCVXgjti1UZKNSRgyP2sQvJA" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1e293b" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Curriculum Vitae - Gonzalo Segura Taguas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Merriweather', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              paper: '#ffffff',
+              ink: '#1e293b',
+            },
+            boxShadow: {
+              'page': '0 10px 30px -5px rgba(0, 0, 0, 0.15)',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #e2e8f0;
+        font-family: 'Inter', sans-serif;
+      }
+      .a4-ratio {
+        aspect-ratio: 210 / 297;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      /* Simple spinner for loading state */
+      .loader-spinner {
+        border: 4px solid #cbd5e1;
+        border-top: 4px solid #2563eb;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root">
+      <!-- Initial Loading State displayed before React mounts -->
+      <div style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #64748b;">
+        <div class="loader-spinner" style="margin-bottom: 1rem;"></div>
+        <p style="font-size: 0.875rem; font-weight: 500;">Cargando CV...</p>
+      </div>
+    </div>
+    
+    <!-- IMPORTANTE: Usar la ruta canónica para el entry point que Vite reescribirá durante la build -->
+    <script type="module" src="/src/index.tsx"></script>
+
+    <!-- Script de Diagnóstico: Detecta si el JS falló y muestra ayuda -->
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var root = document.getElementById('root');
+          // Si sigue mostrando el spinner después de 3 segundos, algo falló
+          if (root && root.innerText.includes('Cargando CV')) {
+             console.warn("La aplicación React no se ha montado. Posible error de configuración.");
+             
+             var isGitHub = window.location.hostname.includes('github.io');
+             var message = '<div style="padding: 2rem; text-align: center; font-family: sans-serif; color: #334155; max-width: 600px; margin: 0 auto;">';
+             
+             message += '<div style="font-size: 3rem; margin-bottom: 1rem;">⚠️</div>';
+             message += '<h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #1e293b;">No se pudo cargar la aplicación</h2>';
+             
+             if (isGitHub) {
+               message += '<p style="margin-bottom: 1rem;">GitHub Pages está intentando leer el archivo <code>index.tsx</code> original en lugar de la versión compilada.</p>';
+               message += '<div style="background: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin: 1.5rem 0; text-align: left; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">';
+               message += '<p style="font-weight: bold; margin-bottom: 0.75rem; color: #2563eb;">Solución requerida:</p>';
+               message += '<ol style="list-style-type: decimal; list-style-position: inside; padding-left: 0; line-height: 1.8; color: #475569;">';
+               message += '<li>Ve a la pestaña <strong>Settings</strong> de tu repositorio en GitHub.</li>';
+               message += '<li>En el menú lateral, haz clic en <strong>Pages</strong>.</li>';
+               message += '<li>En la sección "Build and deployment", busca <strong>Branch</strong>.</li>';
+               message += '<li>Cambia la carpeta de <code>/ (root)</code> a <strong><code>/docs</code></strong>.</li>';
+               message += '<li>Haz clic en <strong>Save</strong>.</li>';
+               message += '</ol>';
+               message += '</div>';
+               message += '<p style="font-size: 0.875rem; color: #64748b;">Espera 1-2 minutos después de guardar y recarga esta página.</p>';
+             } else {
+               message += '<div style="background: #fff1f2; color: #be123c; padding: 1rem; border-radius: 0.5rem; border: 1px solid #fda4af;">';
+               message += '<p><strong>Error local:</strong> No abras el archivo <code>index.html</code> directamente.</p>';
+               message += '<p style="margin-top:0.5rem">Usa el comando <code>npm run dev</code> para desarrollar o <code>npm run preview</code> para ver la build.</p>';
+               message += '</div>';
+             }
+             
+             message += '</div>';
+             root.innerHTML = message;
+          }
+        }, 3000); // Espera 3 segundos antes de mostrar el error
+      });
+    </script>
+  </body>
+</html>
