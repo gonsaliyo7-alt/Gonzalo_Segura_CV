@@ -90,6 +90,19 @@ export const RESUME_DATA: ResumeData = {
   ],
   experience: [
     {
+      company: "Freelance",
+      role: "Desarrollo de aplicaciones web y Android",
+      period: "2025 - Presente",
+      description: "Diseño y desarrollo de soluciones digitales a medida, creando aplicaciones web responsivas y apps Android nativas, gestionando todo el ciclo de vida del proyecto desde la planificación hasta el despliegue.",
+      achievements: [
+        "Entrega de más de 10 proyectos full‑stack para clientes internacionales.",
+        "Implementación de arquitectura serverless con Firebase y Google Cloud.",
+        "Optimización de rendimiento y SEO, logrando puntuaciones > 90 en Lighthouse.",
+        "Integración de pagos y notificaciones push en Android.",
+        "Uso de metodologías ágiles (Scrum) para entregas iterativas y feedback continuo."
+      ]
+    },
+    {
       company: "HOTEL RED LION(★★★)",
       role: "Recepcionista, Gerente de Bar, Lavandería",
       period: "2023 - 2024",
