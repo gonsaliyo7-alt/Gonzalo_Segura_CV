@@ -1,5 +1,4 @@
 
-
 import { ResumeData } from './types';
 
 export const RESUME_DATA: ResumeData = {
@@ -15,7 +14,6 @@ export const RESUME_DATA: ResumeData = {
       title: "ScreenshotInfo Web App",
       role: "Lead Developer & UI/UX Designer",
       year: "2025",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Aplicación web innovadora para capturar, anotar y extraer información accionable de capturas de pantalla. Desarrollada con Google AI Studio y Firebase, aprovecha el Prompt Engineering de clase mundial para un procesamiento inteligente de imágenes. Enfocada en una interfaz de usuario intuitiva y procesamiento eficiente para mejorar la productividad. Disponible en: <a href="https://screenshotinfo.web.app/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">screenshotinfo.web.app/</a>`,
       tags: ["React", "TypeScript", "UI/UX", "Web Development", "Image Processing", "Firebase", "Google Cloud", "Google AI Studio", "Prompt Engineering"]
     },
@@ -23,7 +21,6 @@ export const RESUME_DATA: ResumeData = {
       title: "PermutaPro Online Application",
       role: "Full Stack Developer",
       year: "2025",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Plataforma online para facilitar el intercambio y permuta de bienes y servicios entre usuarios, optimizando procesos de negociación. Construida sobre Firebase para backend as a service, integración con Google Cloud para escalabilidad, y una interfaz de usuario intuitiva con React. Disponible en: <a href="https://permuta-pro.web.app/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">permuta-pro.web.app/</a>`,
       tags: ["React", "TypeScript", "UI/UX", "Web Development", "Firebase", "Google Cloud", "Real-time Data"]
     },
@@ -31,7 +28,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Colonias de Animales Web App",
       role: "Full Stack Developer",
       year: "2025",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Aplicación web dedicada a la gestión y seguimiento de colonias de animales, facilitando la colaboración entre voluntarios y la administración de datos. Desarrollada con React para una interfaz dinámica, y utilizando Firebase para la base de datos en tiempo real y autenticación. Integración con Google Cloud para almacenamiento de imágenes y servicios de mapeo. Disponible en: <a href="https://colonias-de-animales.web.app/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">colonias-de-animales.web.app/</a>`,
       tags: ["React", "TypeScript", "Firebase", "Google Cloud", "UI/UX", "Web Development", "Real-time Data", "Community Management"]
     },
@@ -39,7 +35,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Blackjack Trainer",
       role: "Game Developer & Strategy AI",
       year: "2025",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Aplicación web interactiva diseñada para entrenar a los jugadores en estrategias óptimas de Blackjack. Ofrece simulaciones de juego realistas, retroalimentación en tiempo real y análisis de decisiones para mejorar las habilidades del usuario. Ideal para aprender y perfeccionar las tácticas de conteo de cartas y decisiones de juego. Disponible en: <a href="https://taguas.info/wp-content/uploads/2025/06/blackjack_trainer.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">blackjack_trainer.html</a>`,
       tags: ["HTML", "CSS", "JavaScript", "Game Development", "Strategy Training", "Simulation", "Web Application", "AI Trainer"]
     },
@@ -47,7 +42,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Culturilla General",
       role: "Educational Content Developer",
       year: "2025",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Aplicación web diseñada para poner a prueba y ampliar el conocimiento general de los usuarios a través de quizzes interactivos y datos curiosos. Incorpora una interfaz amigable y un sistema de puntuación para gamificar el aprendizaje. Ideal para el entretenimiento educativo y la mejora continua del intelecto. Disponible en: <a href="https://taguas.info/wp-content/uploads/2025/06/culturilla-general.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">culturilla-general.html</a>`,
       tags: ["HTML", "CSS", "JavaScript", "Web Development", "Education", "Quizzes", "Interactive Learning"]
     },
@@ -55,7 +49,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Curso SEO App",
       role: "Web Development & SEO Content Creator",
       year: "2025",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Aplicación web interactiva diseñada para enseñar los fundamentos del SEO (Search Engine Optimization), cubriendo temas como optimización on-page, off-page, investigación de palabras clave y análisis de rendimiento. La app ofrece lecciones claras, ejemplos prácticos y quizzes para un aprendizaje efectivo y gamificado, dirigida a principiantes y profesionales que buscan mejorar sus habilidades en SEO. Disponible en: <a href="https://taguas.info/wp-content/uploads/2025/06/curso_seo_app.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">curso_seo_app.html</a>`,
       tags: ["HTML", "CSS", "JavaScript", "Web Development", "SEO", "Education", "Interactive Learning"]
     },
@@ -63,7 +56,6 @@ export const RESUME_DATA: ResumeData = {
       title: "SEO Keyword Finder",
       role: "AI/Prompt Engineer & Web Developer",
       year: "2025",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Herramienta web innovadora para la investigación y análisis de palabras clave SEO, diseñada para ayudar a los usuarios a descubrir términos de búsqueda de alto valor y entender la competencia. Utiliza técnicas avanzadas de Prompt Engineering y la API de Gemini para generar ideas de palabras clave, analizar tendencias y proporcionar insights accionables. Ideal para estrategas de contenido, especialistas en marketing digital y emprendedores. Disponible en: <a href="https://taguas.info/wp-content/uploads/2025/06/seo_keyword_finder.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">seo_keyword_finder.html</a>`,
       tags: ["HTML", "CSS", "JavaScript", "Web Development", "SEO", "Prompt Engineering", "Gemini API", "Keyword Research", "Digital Marketing"]
     },
@@ -71,7 +63,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Diet Generator App",
       role: "AI/Prompt Engineer & Full Stack Developer",
       year: "2025",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Aplicación web inteligente que genera planes de dieta personalizados basados en las preferencias del usuario, objetivos de salud y restricciones dietéticas. Utiliza técnicas avanzadas de Prompt Engineering y la API de Gemini para ofrecer recomendaciones nutricionales adaptadas y recetas. Ideal para usuarios que buscan optimizar su alimentación y alcanzar sus metas de bienestar de forma eficiente. Disponible en: <a href="https://taguas.info/wp-content/uploads/2025/06/diet_generator_app.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">diet_generator_app.html</a>`,
       tags: ["React", "TypeScript", "Web Development", "AI", "Prompt Engineering", "Gemini API", "Nutrition", "Health", "Personalization"]
     },
@@ -79,7 +70,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Flappy Bird Web3",
       role: "HTML Prompt Engineer",
       year: "2024",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Reimplementación del clásico juego Flappy Bird con un enfoque Web3 y técnicas avanzadas de HTML Prompt Engineering para generar dinámicamente elementos del juego y la interacción. Explora la integración de lógica de juego con prompts para crear experiencias interactivas y descentralizadas. Disponible en: <a href="https://taguas.info/wp-content/uploads/2025/06/flappy-bird-2.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">taguas.info/wp-content/uploads/2025/06/flappy-bird-2.html</a>`,
       tags: ["HTML", "JavaScript", "Web3", "Game Development", "Prompt Engineering", "Decentralized Applications"]
     },
@@ -87,7 +77,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Breathing App",
       role: "Web Developer",
       year: "2024",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Aplicación web simple para ejercicios de respiración, diseñada para promover la relajación y el bienestar. Implementada con tecnologías web básicas, ofreciendo una interfaz de usuario clara y fácil de usar para guiar a los usuarios a través de diferentes patrones de respiración. Disponible en: <a href="https://taguas.info/wp-content/uploads/2025/06/breathing_app.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">breathing_app.html</a>`,
       tags: ["HTML", "CSS", "JavaScript", "Web Development", "Wellness", "Mindfulness"]
     },
@@ -95,7 +84,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Taguas.info Web automatizada",
       role: "Lead Developer",
       year: "2023",
-      // Fix: Use backticks for the description string to avoid issues with escaped quotes.
       description: `Plataforma web automatizada para la captura y retroalimentación de información por parte de los usuarios. Desarrollada con WordPress para la gestión de contenido, y optimizada con integración de bases de datos para un procesamiento eficiente de los datos. Disponible en: <a href="https://taguas.info/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">taguas.info/</a>`,
       tags: ["WordPress", "Database Management", "Web Automation", "UI/UX", "User-generated Content"]
     }
@@ -259,7 +247,7 @@ export const RESUME_DATA: ResumeData = {
     { name: "WordPress", level: 85, category: "tech" },
     { name: "Firebase / Google Cloud", level: 85, category: "tech" },
     { name: "Bases de Datos (SQL/NoSQL)", level: 88, category: "tech" },
-    { name: "Hardware y Redes", level: 80, category: "tech" }, // Added based on "Técnico en Operación de Sistemas Informáticos"
+    { name: "Hardware y Redes", level: 80, category: "tech" },
     { name: "Sistemas Operativos (Linux/Windows)", level: 80, category: "tech" },
     { name: "Análisis de Datos / BI", level: 80, category: "tech" },
     { name: "Prompt Engineering / IA", level: 90, category: "tech" },
@@ -268,7 +256,7 @@ export const RESUME_DATA: ResumeData = {
     { name: "UI/UX Design", level: 80, category: "tech" },
     { name: "Metodologías Ágiles (Scrum)", level: 85, category: "tech" },
     { name: "Mantenimiento de Sistemas Informáticos", level: 75, category: "tech" },
-    { name: "Web3 / Blockchain", level: 70, category: "tech" } // Added based on "Flappy Bird Web3" project
+    { name: "Web3 / Blockchain", level: 70, category: "tech" }
   ],
   softSkills: [
     "Liderazgo de Equipos y Proyectos",
@@ -314,7 +302,7 @@ export const RESUME_DATA: ResumeData = {
     "Administración Empresarial, Contabilidad e Impuestos",
     "Colaboración y Coordinación con Asesorías y Gestorías",
   ],
-  investmentPortfolio: [ // Actualizado con las nuevas asignaciones
+  investmentPortfolio: [
     { name: "Altísimo Riesgo Apalancado", allocation: 10, type: 'other' },
     { name: "Riesgo Moderado", allocation: 20, type: 'other' },
     { name: "S&P 500 Indexado", allocation: 30, type: 'index' },
@@ -395,6 +383,49 @@ export const RESUME_DATA: ResumeData = {
     "Global Logistics Manager",
     "IT Operations Director",
     "Strategic Business Partner"
+  ],
+  physicalTools: [
+    {
+      category: "Construcción y Pintura",
+      tools: [
+        "Máquina Airless / Esprayadora de Pintura",
+        "Hidrolimpiadora a Presión (Pressure Washer)",
+        "Plataformas Elevadoras (Boom Lift / Scissor Lift)",
+        "Rodillos y Brochas Profesionales",
+        "Lijadoras Industriales",
+        "Escaleras Extensibles y Andamios",
+        "Equipos de Protección Individual (EPIs)"
+      ]
+    },
+    {
+      category: "Mantenimiento y Reparación",
+      tools: [
+        "Taladros Percutores y Atornilladores",
+        "Juegos de Brocas (Madera, Metal, Hormigón)",
+        "Soldador de Estaño (Electrónica)",
+        "Multímetro Digital",
+        "Herramientas de Mano (Destornilladores, Llaves, Alicates)",
+        "Sierras y Herramientas de Corte"
+      ]
+    },
+    {
+      category: "Hardware Informático",
+      tools: [
+        "Kits de Montaje de PC (Destornilladores de precisión)",
+        "Pasta Térmica y Limpieza de Componentes",
+        "Crimpadora de Cables de Red (RJ45)",
+        "Testers de Cableado",
+        "Herramientas de Diagnóstico de Hardware"
+      ]
+    },
+    {
+      category: "Logística y Otros",
+      tools: [
+        "Manejo de Furgonetas de Carga",
+        "Herramientas de Jardinería y Exteriores",
+        "Equipos de Limpieza Industrial"
+      ]
+    }
   ]
 };
 

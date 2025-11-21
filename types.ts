@@ -1,5 +1,4 @@
 
-
 export interface Project {
   title: string;
   role: string;
@@ -37,6 +36,11 @@ export interface InvestmentCategory {
   type: 'index' | 'pension' | 'other';
 }
 
+export interface ToolCategory {
+  category: string;
+  tools: string[];
+}
+
 export interface ResumeData {
   personalInfo: {
     name: string;
@@ -51,8 +55,9 @@ export interface ResumeData {
   softSkills: string[];
   personalTraits: string[];
   businessKnowledge: string[];
-  investmentPortfolio: InvestmentCategory[]; // Actualizado para usar InvestmentCategory
+  investmentPortfolio: InvestmentCategory[];
   education: EducationEntry[];
-  investmentInsight: string; // Nuevo campo para la narrativa de inversión
-  qualifiedRoles: string[]; // Nuevo campo para roles target
+  investmentInsight: string;
+  qualifiedRoles: string[];
+  physicalTools: ToolCategory[];
 }

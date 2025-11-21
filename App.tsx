@@ -1,23 +1,22 @@
 
-
 import React, { useState, useEffect } from 'react';
 import { A4Page } from './components/A4Page';
 import { RESUME_DATA, DATA_PROTECTION_TEXT } from './constants';
-import { 
-  Briefcase, Code, Award, User, TrendingUp, 
-  BookOpen, Cpu, PieChart, ShieldCheck, CheckCircle, Globe, GraduationCap, Plane, ExternalLink
+import {
+  Briefcase, Code, Award, User, TrendingUp,
+  BookOpen, Cpu, PieChart, ShieldCheck, CheckCircle, Globe, GraduationCap, Plane, ExternalLink, Wrench
 } from 'lucide-react';
-import { 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
+import {
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
 
 // Components for specific page contents
 const IntroSection: React.FC = () => (
   <div className="flex flex-col h-full justify-center gap-12">
     <div className="text-center space-y-6">
-       <h1 className="font-serif font-extrabold text-5xl text-slate-900 mb-10">Curriculum Vitae</h1> {/* Added main title */}
-       <h3 className="text-xl text-slate-400 font-serif italic">Resumen Ejecutivo</h3>
-       <div className="bg-slate-50 p-8 rounded-lg border-l-4 border-blue-600 italic text-slate-700 leading-loose text-lg">
+      <h1 className="font-serif font-extrabold text-5xl text-slate-900 mb-10">Curriculum Vitae</h1> {/* Added main title */}
+      <h3 className="text-xl text-slate-400 font-serif italic">Resumen Ejecutivo</h3>
+      <div className="bg-slate-50 p-8 rounded-lg border-l-4 border-blue-600 italic text-slate-700 leading-loose text-lg">
         "{RESUME_DATA.personalInfo.summary}"
       </div>
     </div>
@@ -30,12 +29,12 @@ const IntroSection: React.FC = () => (
           <p className="text-sm text-justify text-slate-500 mb-6 leading-relaxed font-serif">
             {DATA_PROTECTION_TEXT}
           </p>
-          
+
           <div className="flex items-center gap-3 p-4 bg-blue-50 border border-blue-100 rounded-lg w-fit">
             <CheckCircle size={24} className="text-blue-600" />
             <div className="flex flex-col">
-               <span className="text-sm font-bold text-blue-900 uppercase tracking-wide">Consentimiento Otorgado</span>
-               <span className="text-xs text-blue-700">Documento digitalmente autorizado por el titular.</span>
+              <span className="text-sm font-bold text-blue-900 uppercase tracking-wide">Consentimiento Otorgado</span>
+              <span className="text-xs text-blue-700">Documento digitalmente autorizado por el titular.</span>
             </div>
           </div>
         </div>
@@ -55,8 +54,8 @@ const ProjectsSection = () => (
             <span className="text-xs font-mono bg-slate-200 px-2 py-1 rounded">{project.year}</span>
           </div>
           <p className="text-blue-700 font-medium text-sm mb-3">{project.role}</p>
-          <p 
-            className="text-slate-600 text-sm mb-4 leading-relaxed" 
+          <p
+            className="text-slate-600 text-sm mb-4 leading-relaxed"
             dangerouslySetInnerHTML={{ __html: project.description }}
           ></p>
           <div className="flex flex-wrap gap-2">
@@ -75,30 +74,30 @@ const ProjectsSection = () => (
       </h3>
       <ul className="list-disc list-inside text-sm text-slate-600 space-y-3">
         <li>
-          "Dos Corazones, Mil Horizontes: La Épica Aventura de María y Gonzalo" <br/>
-          de Gonzalo Segura Taguas, 2025. eBook Kindle: 
+          "Dos Corazones, Mil Horizontes: La Épica Aventura de María y Gonzalo" <br />
+          de Gonzalo Segura Taguas, 2025. eBook Kindle:
           <a href="https://www.amazon.com/dp/B0FSKP22J4" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ver en Amazon</a>
         </li>
         <li>
-          "El Príncipe Estratega (FAN MADE): Mi Ascensión Silenciosa al Trono Cósmico" <br/>
-          de Gonzalo Segura Taguas, 2025. eBook Kindle: 
+          "El Príncipe Estratega (FAN MADE): Mi Ascensión Silenciosa al Trono Cósmico" <br />
+          de Gonzalo Segura Taguas, 2025. eBook Kindle:
           <a href="https://www.amazon.es/dp/B0FSGVXTX2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ver en Amazon</a>
         </li>
         <li>
-          "El Peso de la Visión: Una Odisea del Pensamiento en la Era del Vacío" <br/>
-          de Gonzalo Segura Taguas, 2025. eBook Kindle: 
+          "El Peso de la Visión: Una Odisea del Pensamiento en la Era del Vacío" <br />
+          de Gonzalo Segura Taguas, 2025. eBook Kindle:
           <a href="https://www.amazon.com/dp/B0FRXTY984" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ver en Amazon</a>
         </li>
       </ul>
     </div>
 
     <div className="mt-6 bg-amber-50 p-6 rounded-xl border border-amber-100 shadow-sm">
-        <h3 className="font-bold text-slate-800 mb-3 text-md flex items-center gap-2">
-            <BookOpen size={18} className="text-amber-700"/> Investigación y Desarrollo (Archivo Manuscrito)
-        </h3>
-        <p className="text-sm text-slate-700 leading-relaxed italic">
-            "Cuento con un extenso archivo de <strong>cuadernos y cuadernos manuscritos</strong> donde he desarrollado y planificado meticulosamente cada aspecto de mis proyectos. Desde la lógica de programación compleja hasta el diseño detallado de <strong>bases de datos</strong> relacionales y arquitecturas de sistemas, todo ha sido escrito y estructurado en papel antes de su implementación digital, demostrando una profundidad de ingeniería y planificación exhaustiva."
-        </p>
+      <h3 className="font-bold text-slate-800 mb-3 text-md flex items-center gap-2">
+        <BookOpen size={18} className="text-amber-700" /> Investigación y Desarrollo (Archivo Manuscrito)
+      </h3>
+      <p className="text-sm text-slate-700 leading-relaxed italic">
+        "Cuento con un extenso archivo de <strong>cuadernos y cuadernos manuscritos</strong> donde he desarrollado y planificado meticulosamente cada aspecto de mis proyectos. Desde la lógica de programación compleja hasta el diseño detallado de <strong>bases de datos</strong> relacionales y arquitecturas de sistemas, todo ha sido escrito y estructurado en papel antes de su implementación digital, demostrando una profundidad de ingeniería y planificación exhaustiva."
+      </p>
     </div>
   </div>
 );
@@ -108,15 +107,15 @@ const ExperienceSection = () => (
     {RESUME_DATA.experience.map((job, i) => (
       <div key={i} className="relative pl-8">
         <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
-        
+
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
           <h3 className="text-2xl font-bold text-slate-800">{job.company}</h3>
           <span className="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">{job.period}</span>
         </div>
-        
+
         <h4 className="text-lg text-blue-700 font-medium mb-4">{job.role}</h4>
         <p className="text-slate-600 mb-4 italic">{job.description}</p>
-        
+
         <div className="space-y-2">
           {job.achievements.map((ach, idx) => (
             <div key={idx} className="flex items-start gap-2 text-sm text-slate-700">
@@ -153,11 +152,11 @@ const PersonalitySection = ({ title, traits, icon: Icon }: { title: string, trai
 const CertificationsSection: React.FC = () => (
   <div className="space-y-8">
     <p className="text-slate-600 mb-6">Mis logros académicos y certificaciones profesionales que respaldan mi experiencia y conocimiento.</p>
-    
-    <a 
+
+    <a
       href="https://www.skills.google/public_profiles/1eb38f97-fa72-4ab0-8949-17b801917193"
       target="_blank"
-      rel="noopener noreferrer" 
+      rel="noopener noreferrer"
       className="flex items-center p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-all group border-l-4 border-l-blue-500 mb-6"
     >
       <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 shrink-0 mr-4">
@@ -181,28 +180,28 @@ const CertificationsSection: React.FC = () => (
             return parseInt(parts[1] || parts[0]);
           };
           return parseYear(b.period) - parseYear(a.period);
-        }) 
+        })
         .map((entry, i) => (
-        <div key={i} className="flex items-start gap-4 p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-          <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 shrink-0">
-            <GraduationCap size={24} />
+          <div key={i} className="flex items-start gap-4 p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 shrink-0">
+              <GraduationCap size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-800 text-lg">
+                {entry.url ? (
+                  <a href={entry.url} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 flex items-center gap-2">
+                    {entry.title} <ExternalLink size={16} className="inline-block text-slate-400" />
+                  </a>
+                ) : (
+                  entry.title
+                )}
+              </h3>
+              <p className="text-slate-600 text-sm">{entry.institution}</p>
+              <span className="text-xs font-mono bg-slate-100 px-2 py-1 rounded mt-2 inline-block">{entry.period}</span>
+              {entry.details && <p className="text-xs text-slate-500 mt-1 italic">{entry.details}</p>}
+            </div>
           </div>
-          <div>
-            <h3 className="font-bold text-slate-800 text-lg">
-              {entry.url ? (
-                <a href={entry.url} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 flex items-center gap-2">
-                   {entry.title} <ExternalLink size={16} className="inline-block text-slate-400" />
-                </a>
-              ) : (
-                entry.title
-              )}
-            </h3>
-            <p className="text-slate-600 text-sm">{entry.institution}</p>
-            <span className="text-xs font-mono bg-slate-100 px-2 py-1 rounded mt-2 inline-block">{entry.period}</span>
-            {entry.details && <p className="text-xs text-slate-500 mt-1 italic">{entry.details}</p>}
-          </div>
-        </div>
-      ))}
+        ))}
 
       {/* Course and Certification entries */}
       <h3 className="text-lg font-bold text-slate-800 mt-8 border-b-2 border-green-600 pb-2">Cursos y Certificaciones</h3>
@@ -210,26 +209,26 @@ const CertificationsSection: React.FC = () => (
         .filter(entry => entry.type === 'course' || entry.type === 'certification')
         .sort((a, b) => parseInt(b.period.split(' ')[0]) - parseInt(a.period.split(' ')[0])) // Sort by start year, newest first
         .map((entry, i) => (
-        <div key={i} className="flex items-start gap-4 p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-          <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-green-600 shrink-0">
-            <Award size={24} />
+          <div key={i} className="flex items-start gap-4 p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-green-600 shrink-0">
+              <Award size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-800 text-lg">
+                {entry.url ? (
+                  <a href={entry.url} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 flex items-center gap-2">
+                    {entry.title} <ExternalLink size={16} className="inline-block text-slate-400" />
+                  </a>
+                ) : (
+                  entry.title
+                )}
+              </h3>
+              <p className="text-slate-600 text-sm">{entry.institution}</p>
+              <span className="text-xs font-mono bg-slate-100 px-2 py-1 rounded mt-2 inline-block">{entry.period}</span>
+              {entry.details && <p className="text-xs text-slate-500 mt-1 italic">{entry.details}</p>}
+            </div>
           </div>
-          <div>
-             <h3 className="font-bold text-slate-800 text-lg">
-              {entry.url ? (
-                <a href={entry.url} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 flex items-center gap-2">
-                   {entry.title} <ExternalLink size={16} className="inline-block text-slate-400" />
-                </a>
-              ) : (
-                entry.title
-              )}
-            </h3>
-            <p className="text-slate-600 text-sm">{entry.institution}</p>
-            <span className="text-xs font-mono bg-slate-100 px-2 py-1 rounded mt-2 inline-block">{entry.period}</span>
-            {entry.details && <p className="text-xs text-slate-500 mt-1 italic">{entry.details}</p>}
-          </div>
-        </div>
-      ))}
+        ))}
     </div>
   </div>
 );
@@ -237,7 +236,7 @@ const CertificationsSection: React.FC = () => (
 const ITSkillsSection = () => (
   <div className="space-y-10">
     <p className="text-slate-600">Dominio técnico en múltiples áreas, con experiencia práctica en desarrollo web, análisis de datos, hardware, redes y gestión de sistemas, validado en entornos de producción de alto rendimiento y proyectos innovadores.</p>
-    
+
     <div className="space-y-8">
       {RESUME_DATA.itSkills.map((skill, i) => (
         <div key={i}>
@@ -246,7 +245,7 @@ const ITSkillsSection = () => (
             <span className="text-slate-500 text-sm">{skill.level}%</span>
           </div>
           <div className="h-3 bg-slate-100 rounded-full overflow-hidden">
-            <div 
+            <div
               className="h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-1000"
               style={{ width: `${skill.level}%` }}
             ></div>
@@ -272,6 +271,31 @@ const ITSkillsSection = () => (
   </div>
 );
 
+const PhysicalToolsSection = () => (
+  <div className="space-y-8">
+    <p className="text-slate-600 mb-6">
+      Dominio de herramientas físicas y maquinaria profesional, adquirido a través de experiencia práctica en construcción, mantenimiento y logística.
+    </p>
+    <div className="grid gap-6">
+      {RESUME_DATA.physicalTools.map((category, i) => (
+        <div key={i} className="bg-white border border-slate-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <h3 className="font-bold text-slate-800 text-lg mb-4 border-b border-slate-100 pb-2 flex items-center gap-2">
+            <Wrench size={20} className="text-blue-600" />
+            {category.category}
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {category.tools.map((tool, j) => (
+              <span key={j} className="px-3 py-1.5 bg-slate-50 text-slate-700 rounded-lg text-sm border border-slate-100 font-medium">
+                {tool}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
 const ExperienceKnowledgeSection = () => (
   <div className="space-y-8">
     <div className="bg-blue-50 border border-blue-100 p-6 rounded-lg">
@@ -283,25 +307,29 @@ const ExperienceKnowledgeSection = () => (
 
     <div className="grid gap-6">
       {[
-        { 
-          title: "Análisis Predictivo de Mercados y Gestión de Riesgos Algorítmicos", 
-          desc: "Capacidad forjada en la inversión algorítmica para anticipar movimientos del mercado, construir estrategias resilientes y minimizar la exposición a la volatilidad imprevista." 
+        {
+          title: "Análisis Predictivo de Mercados y Gestión de Riesgos Algorítmicos",
+          desc: "Capacidad forjada en la inversión algorítmica para anticipar movimientos del mercado, construir estrategias resilientes y minimizar la exposición a la volatilidad imprevista."
         },
-        { 
-          title: "Liderazgo Intercultural y Resolución de Problemas Globales", 
-          desc: "Competencia desarrollada en +60 países y roles diversos, permitiendo navegar dinámicas culturales complejas y resolver desafíos imprevistos con agilidad y empatía en cualquier contexto." 
+        {
+          title: "Liderazgo Intercultural y Resolución de Problemas Globales",
+          desc: "Competencia desarrollada en +60 países y roles diversos, permitiendo navegar dinámicas culturales complejas y resolver desafíos imprevistos con agilidad y empatía en cualquier contexto."
         },
-        { 
-          title: "Optimización Full Stack para el Rendimiento Crítico", 
-          desc: "Intuición para identificar y resolver cuellos de botella en la arquitectura de software y hardware, garantizando escalabilidad y eficiencia en aplicaciones de alto tráfico y procesamiento intensivo." 
+        {
+          title: "Optimización Full Stack para el Rendimiento Crítico",
+          desc: "Intuición para identificar y resolver cuellos de botella en la arquitectura de software y hardware, garantizando escalabilidad y eficiencia en aplicaciones de alto tráfico y procesamiento intensivo."
         },
-        { 
-          title: "Ingeniería de Prompt Avanzada para Impacto de Negocio", 
-          desc: "Habilidad para traducir necesidades de negocio complejas en instrucciones precisas para IA, desbloqueando soluciones innovadoras en optimización de contenido, análisis y automatización en un 20%." 
+        {
+          title: "Ingeniería de Prompt Avanzada para Impacto de Negocio",
+          desc: "Habilidad para traducir necesidades de negocio complejas en instrucciones precisas para IA, desbloqueando soluciones innovadoras en optimización de contenido, análisis y automatización en un 20%."
         },
-        { 
-          title: "Coordinación Logística Extrema y Resiliencia Operativa", 
-          desc: "Experiencia práctica en la planificación y ejecución de proyectos de gran envergadura (expediciones, travesías continentales) en entornos de alta incertidumbre, manteniendo la moral y los objetivos bajo presión." 
+        {
+          title: "Coordinación Logística Extrema y Resiliencia Operativa",
+          desc: "Experiencia práctica en la planificación y ejecución de proyectos de gran envergadura (expediciones, travesías continentales) en entornos de alta incertidumbre, manteniendo la moral y los objetivos bajo presión."
+        },
+        {
+          title: "Comunicación Transnacional y Cohesión de Equipos Multilingües",
+          desc: "Habilidad experta para forjar relaciones interpersonales sólidas en entornos globales, utilizando un dominio nativo del inglés para eliminar barreras culturales. Capacidad probada para integrarse y liderar en cualquier ecosistema de trabajo internacional, garantizando una operatividad fluida y una colaboración sin fricciones independientemente del idioma o la ubicación geográfica."
         }
       ].map((item, i) => (
         <div key={i} className="flex gap-4">
@@ -330,7 +358,7 @@ const investmentSkills = [
   "Innovación Algorítmica",
   "Construcción de Carteras Diversificadas y Resilientes",
   "Generación de Valor en Entornos Complejos y Volátiles",
-  ];
+];
 
 const StockPortfolioSection = () => {
   const data = RESUME_DATA.investmentPortfolio;
@@ -351,7 +379,7 @@ const StockPortfolioSection = () => {
           ))}
         </div>
       </div>
-      
+
       <div className="flex-grow">
         <h3 className="text-sm font-bold text-slate-400 uppercase mb-4 tracking-wider">Distribución del Portfolio por Categoría</h3>
         <div className="w-full h-48">
@@ -359,8 +387,8 @@ const StockPortfolioSection = () => {
             <BarChart data={data} layout="vertical" margin={{ top: 5, right: 30, left: 40, bottom: 5 }}>
               <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} />
               <XAxis type="number" unit="%" />
-              <YAxis dataKey="name" type="category" tick={{fontSize: 12}} width={120} /> {/* Ajustado width para nombres más largos */}
-              <Tooltip cursor={{fill: 'transparent'}} />
+              <YAxis dataKey="name" type="category" tick={{ fontSize: 12 }} width={120} /> {/* Ajustado width para nombres más largos */}
+              <Tooltip cursor={{ fill: 'transparent' }} />
               <Bar dataKey="allocation" fill="#3b82f6" radius={[0, 4, 4, 0]} barSize={20} />
             </BarChart>
           </ResponsiveContainer>
@@ -373,7 +401,7 @@ const StockPortfolioSection = () => {
 const BusinessKnowledgeSection = () => (
   <div className="grid grid-cols-1 gap-6 h-full content-start">
     <p className="text-slate-600 mb-4">Competencias fundamentales para la toma de decisiones estratégicas.</p>
-    
+
     {RESUME_DATA.businessKnowledge.map((item, i) => (
       <div key={i} className="bg-white border border-slate-200 p-6 rounded-xl shadow-sm flex items-center justify-between group hover:shadow-md transition-shadow">
         <span className="font-serif text-slate-700 text-lg">{item}</span>
@@ -537,12 +565,13 @@ const App: React.FC = () => {
     { id: 4, title: 'Competencias Clave y Liderazgo', icon: User, component: <PersonalitySection title="Competencias Clave y Liderazgo" traits={RESUME_DATA.softSkills} icon={Briefcase} /> },
     { id: 5, title: 'Títulos y Certificaciones', icon: GraduationCap, component: <CertificationsSection /> },
     { id: 6, title: 'Conocimientos Informáticos', icon: Cpu, component: <ITSkillsSection /> },
-    { id: 7, title: 'Conocimiento Empírico', icon: Award, component: <ExperienceKnowledgeSection /> },
-    { id: 8, title: 'Personalidad & Valores', icon: User, component: <PersonalitySection title="Valores Personales" traits={RESUME_DATA.personalTraits} icon={User} /> },
-    { id: 9, title: 'Portfolio de Inversión', icon: PieChart, component: <StockPortfolioSection /> },
-    { id: 10, title: 'Business Knowledge', icon: TrendingUp, component: <BusinessKnowledgeSection /> },
-    { id: 11, title: 'Trayectoria de Movilidad Global y Gestión de Proyectos', icon: Plane, component: <GlobalMobilitySection /> },
-    { id: 12, title: 'Idiomas', icon: Globe, component: <LanguagesSection /> },
+    { id: 7, title: 'Herramientas Físicas y Maquinaria', icon: Wrench, component: <PhysicalToolsSection /> },
+    { id: 8, title: 'Conocimiento Empírico', icon: Award, component: <ExperienceKnowledgeSection /> },
+    { id: 9, title: 'Personalidad & Valores', icon: User, component: <PersonalitySection title="Valores Personales" traits={RESUME_DATA.personalTraits} icon={User} /> },
+    { id: 10, title: 'Portfolio de Inversión', icon: PieChart, component: <StockPortfolioSection /> },
+    { id: 11, title: 'Business Knowledge', icon: TrendingUp, component: <BusinessKnowledgeSection /> },
+    { id: 12, title: 'Trayectoria de Movilidad Global y Gestión de Proyectos', icon: Plane, component: <GlobalMobilitySection /> },
+    { id: 13, title: 'Idiomas', icon: Globe, component: <LanguagesSection /> },
   ];
 
   const totalPages = pages.length;
@@ -573,22 +602,22 @@ const App: React.FC = () => {
       <main className="flex-1 relative flex flex-col h-screen overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 pointer-events-none"></div>
-        
+
         {/* Page Container */}
         <div className="flex-1 overflow-y-auto no-scrollbar flex items-start justify-center p-4 sm:p-8 lg:p-12">
-            <div className="w-full flex justify-center mb-24 lg:mb-0">
-              <A4Page 
-                pageNumber={activePage} 
-                title={pages[activePage-1].title}
-                className="shadow-2xl shadow-black/50 transition-all duration-500 ease-in-out"
-                menuItems={menuItems}
-                onNavigate={setActivePage}
-                onNext={handleNext}
-                onPrev={handlePrev}
-              >
-                {pages[activePage-1].component}
-              </A4Page>
-            </div>
+          <div className="w-full flex justify-center mb-24 lg:mb-0">
+            <A4Page
+              pageNumber={activePage}
+              title={pages[activePage - 1].title}
+              className="shadow-2xl shadow-black/50 transition-all duration-500 ease-in-out"
+              menuItems={menuItems}
+              onNavigate={setActivePage}
+              onNext={handleNext}
+              onPrev={handlePrev}
+            >
+              {pages[activePage - 1].component}
+            </A4Page>
+          </div>
         </div>
       </main>
     </div>
