@@ -1,5 +1,25 @@
 {
-  "name": "Copy of Curriculum Vitae Interactivo - Gonzalo segura Taguas",
-  "description": "Una aplicación de CV digital estructurada en folios A4, con secciones detalladas.",
+  "name": "Gonzalo Segura Taguas - Curriculum Vitae Interactivo",
+  "short_name": "Gonzalo CV",
+  "description": "Curriculum Vitae interactivo de Gonzalo Segura Taguas. Estratega de Innovación Global, Ingeniero Full Stack y Experto en Finanzas Cuantitativas. Estructurado en páginas A4 digitales con secciones detalladas de experiencia, proyectos, habilidades y portfolio.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Gonzalo Segura Taguas",
+    "email": "gonsaliyo7@gmail.com",
+    "url": "https://taguas.info"
+  },
+  "keywords": [
+    "cv",
+    "curriculum",
+    "resume",
+    "gonzalo-segura",
+    "fullstack",
+    "ingeniero-software",
+    "finanzas-cuantitativas",
+    "innovacion-global"
+  ],
+  "language": "es",
+  "theme_color": "#1e293b",
+  "background_color": "#e2e8f0",
   "requestFramePermissions": []
 }

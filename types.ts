@@ -1,4 +1,6 @@
 
+export type Language = 'es' | 'en';
+
 export interface Project {
   title: string;
   role: string;

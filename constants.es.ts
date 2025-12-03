@@ -339,13 +339,6 @@ export const RESUME_DATA: ResumeData = {
       url: 'https://www.skills.google/public_profiles/1eb38f97-fa72-4ab0-8949-17b801917193/badges/20179777'
     },
     {
-      type: 'course',
-      title: 'Curso Lean Manufacturing en Entorno Aeronáutico',
-      institution: 'Cámara de Comercio de Sevilla',
-      period: '2025',
-      details: 'Introducción a la aeronáutica y normativa • Part Numbers y planos • Lean Manufacturing • Certificación IPA • Prevención FOD • Housekeeping y 5S'
-    },
-    {
       type: 'academic',
       title: 'Técnico en Operación de Sistemas Informáticos',
       institution: 'IES Ramón del Valle-Inclán, Sevilla',
@@ -455,26 +448,4 @@ De conformidad con lo dispuesto en el Reglamento (UE) 2016/679 (RGPD) y la Ley O
 Declaro que la información proporcionada es veraz y actualizada. Entiendo que puedo ejercer mis derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición contactando directamente a través del correo electrónico proporcionado en este documento.
 
 Este documento constituye una autorización expresa al equipo de Recursos Humanos para procesar, analizar y almacenar esta información para los fines descritos.
-`;
-
-// Bilingual exports
-export const RESUME_DATA_ES = RESUME_DATA;
-export const DATA_PROTECTION_TEXT_ES = DATA_PROTECTION_TEXT;
-
-// English version (basic - can be expanded later)
-export const RESUME_DATA_EN = {
-  ...RESUME_DATA,
-  personalInfo: {
-    ...RESUME_DATA.personalInfo,
-    title: "Global Innovation Strategist | Full Stack Engineer & Quantitative Finance",
-    location: "Seville, Spain"
-  }
-};
-
-export const DATA_PROTECTION_TEXT_EN = `
-In accordance with the provisions of Regulation (EU) 2016/679 (GDPR), I, ${RESUME_DATA.personalInfo.name}, explicitly consent to my personal data contained in this curriculum vitae being processed for the exclusive purpose of participating in personnel selection processes that fit my professional profile.
-
-I declare that the information provided is true and up to date. I understand that I may exercise my rights of access, rectification, deletion, limitation, portability, and opposition by contacting directly via the email provided in this document.
-
-This document constitutes express authorization for the Human Resources team to process, analyze, and store this information for the purposes described.
 `;

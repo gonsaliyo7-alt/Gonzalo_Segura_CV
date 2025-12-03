@@ -1,9 +1,25 @@
-
-
 {
   "name": "interactive-cv-gonzalo",
   "private": true,
   "version": "1.0.0",
+  "description": "Interactive Curriculum Vitae and Portfolio website for Gonzalo Segura Taguas - Global Innovation Strategist | Full Stack Engineer & Quantitative Finance Expert",
+  "author": {
+    "name": "Gonzalo Segura Taguas",
+    "email": "gonsaliyo7@gmail.com",
+    "url": "https://taguas.info"
+  },
+  "license": "MIT",
+  "keywords": [
+    "cv",
+    "resume",
+    "portfolio",
+    "react",
+    "typescript",
+    "vite",
+    "fullstack",
+    "quantitative-finance",
+    "innovation-strategy"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
