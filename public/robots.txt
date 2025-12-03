@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gonsaliyo7-alt.github.io/Gonzalo_Segura_CV/sitemap.xml
