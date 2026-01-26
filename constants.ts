@@ -326,7 +326,7 @@ export const RESUME_DATA: ResumeData = {
       type: 'certification',
       title: 'Basic Operator of CNC Machine',
       institution: 'Haas',
-      period: '2025',
+      period: 'Ene 2026',
       url: 'https://drive.google.com/file/d/1dEwL1J4I19csMNGI0uT1oqPTCXk6Ian8/view?usp=sharing'
     },
     {
