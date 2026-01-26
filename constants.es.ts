@@ -324,6 +324,13 @@ export const RESUME_DATA: ResumeData = {
   education: [
     {
       type: 'certification',
+      title: 'Basic Operator of CNC Machine',
+      institution: 'Haas',
+      period: 'Ene 2026',
+      url: 'https://drive.google.com/file/d/1dEwL1J4I19csMNGI0uT1oqPTCXk6Ian8/view?usp=sharing'
+    },
+    {
+      type: 'certification',
       title: 'Configure Service Accounts and IAM Roles for Google Cloud',
       institution: 'Google Cloud',
       period: '2025',
